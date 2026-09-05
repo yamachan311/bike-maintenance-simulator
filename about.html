@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bike Cost Labについて｜バイクの維持費シミュレーター</title>
+
+  <meta name="description" content="Bike Cost Labは、バイクの年間維持費をかんたんにシミュレーションできるサイトです。燃料代、保険料、税金、オイル代などから年間・月間の維持費を計算できます。">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 24px 20px;
+    }
+
+    header .inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .site-name {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .site-subtitle {
+      margin: 4px 0 0;
+      color: #d1d5db;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 21px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #f3f4f6;
+      border-left: 4px solid #111827;
+      padding: 16px;
+      margin: 18px 0;
+      border-radius: 6px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 18px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .back-link:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px 20px 40px;
+      text-align: center;
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 16px;
+      }
+
+      .site-name {
+        font-size: 24px;
+      }
+
+      main {
+        margin-top: 20px;
+        padding: 0 14px;
+      }
+
+      .card {
+        padding: 22px 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="inner">
+    <p class="site-name">Bike Cost Lab</p>
+    <p class="site-subtitle">バイクの維持費を、かんたんシミュレーション。</p>
+  </div>
+</header>
+
+<main>
+
+  <section class="card">
+    <h1>Bike Cost Labについて</h1>
+
+    <p>
+      Bike Cost Labは、バイクにかかる年間の維持費を
+      できるだけ分かりやすく確認できるようにするためのシミュレーションサイトです。
+    </p>
+
+    <p>
+      バイクを購入する前に「年間でどのくらいお金がかかるのか知りたい」
+      「月々いくらくらい必要なのか知りたい」といった疑問を、
+      簡単な入力で確認できることを目的としています。
+    </p>
+
+    <div class="highlight">
+      <strong>Bike Cost Labの目的</strong><br>
+      バイクの維持費を分かりやすく見える化し、
+      バイク選びや維持費の計画に役立つ情報を提供することです。
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>シミュレーターで計算できるもの</h2>
+
+    <p>入力した条件をもとに、以下の費用を概算します。</p>
+
+    <ul>
+      <li>ガソリン代</li>
+      <li>自賠責保険料</li>
+      <li>任意保険料</li>
+      <li>軽自動車税</li>
+      <li>エンジンオイルなどのオイル代</li>
+      <li>年間維持費</li>
+      <li>月平均の維持費</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>計算結果について</h2>
+
+    <p>
+      シミュレーターで表示される金額は、入力された条件や登録されている
+      車種データなどをもとにした<strong>概算値</strong>です。
+    </p>
+
+    <p>
+      実際の維持費は、走行距離、運転方法、車両の状態、地域、
+      保険の契約内容、メンテナンス状況などによって大きく変わる場合があります。
+    </p>
+
+    <p>
+      特に中古車やカスタム車、年式の古い車両などでは、
+      実際の費用との差が大きくなる可能性があります。
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>今後について</h2>
+
+    <p>
+      Bike Cost Labでは、今後さらに対応車種やデータを増やし、
+      より使いやすく、バイク選びに役立つサービスを目指しています。
+    </p>
+
+    <p>
+      維持費のシミュレーションだけでなく、
+      車種ごとの比較やバイクに関するさまざまな情報も
+      提供できるサイトへの発展を目指しています。
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>運営について</h2>
+
+    <p>
+      Bike Cost Labは、バイクに関する情報をもとに、
+      維持費を簡単に比較・計算できるサービスとして運営しています。
+    </p>
+
+    <p>
+      掲載している情報や計算結果には誤差が含まれる場合があります。
+      利用の際は、必要に応じて各メーカー、保険会社、自治体などの
+      最新の公式情報もご確認ください。
+    </p>
+  </section>
+
+  <a class="back-link" href="index.html">
+    ← シミュレーターに戻る
+  </a>
+
+</main>
+
+<footer>
+  © Bike Cost Lab
+</footer>
+
+</body>
+</html>
